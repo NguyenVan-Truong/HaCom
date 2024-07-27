@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-repeating-gradient {
+  background: linear-gradient(
+    to right,
+    rgb(221, 7, 7),
+    blue,
+    purple,
+    red,
+    blue,
+    purple
+  );
+  background-size: 200% 150%; /* Điều chỉnh kích thước để gradient lặp lại */
+  animation: gradientAnimation 1s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  100% {
+    background-position: 0% 0%;
+  }
+  0% {
+    background-position: 100% 0%;
+  }
+}
