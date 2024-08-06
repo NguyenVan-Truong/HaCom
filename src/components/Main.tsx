@@ -38,15 +38,16 @@ const Main = () => {
                             <img src="../images/asus.jpg" alt="" width="150" height="150" className="absolute top-0 right-0 z-10" />
                         </div> */}
                         <ActionMain />
-                        <div className="flex gap-[25px] mt-4">
+                        {/* <div className="flex gap-[25px] mt-4">
                             <img src="../images/sanpham1.jpg" alt="sanpham1" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
                             <img src="../images/sanpham2.jpg" alt="sanpham2" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
                             <img src="../images/sanpham3.jpg" alt="sanpham3" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
                             <img src="../images/sanpham4.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                        </div>
-                        <div className="relative custom-width h-5 border-2 border-gray-600 rounded-xl bg-white-500">
-                            <div className="absolute top-0 left-10 h-4 rounded-xl pr-4 bg-gray-400 custom-red-width"></div>
-                        </div>
+                            <img src="../images/sanpham5.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
+                            <img src="../images/sanpham7.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
+                            <img src="../images/sanpham8.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
+                            <img src="../images/sanpham5.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
+                        </div> */}
                         <div className='flex justify-center items-center  mt-5'>
                             <div className="w-32 flex flex-col items-center">
                                 <img src="../images/sanpham5.jpg" alt="Hình ảnh chụp sản phẩm" width={50} height={50} className="border-2 border-gray-400 p-1 rounded-lg" />
