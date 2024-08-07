@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../css/ACtionSupport.css';
 const ActionSupport = () => {
     return (
         <div className="flex items-center space-x-4">
@@ -11,20 +11,38 @@ const ActionSupport = () => {
                     </svg>
                     <h6 className="text-sm">Hỗ trợ</h6>
                 </div>
-                <div className="absolute mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
-                    <ul className="list-none p-2">
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white border border-gray-300  invisible group-hover:visible w-64 z-10">
+                    <ul className="list-none p-2 text-sm shadow-2xl">
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Chính sách , quy định chung</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Chính sách giao hàng</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Chính sách bảo hành</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Chính sách cho doanh nghiệp</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Chính sách hàng chính hãng</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Chính sách nhập lại tính phí</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Hướng dẫn mua hàng trực tuyến</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Hướng dẫn thanh toán</span>
                         </li>
                     </ul>
                 </div>
             </div>
+
+
+
 
             {/* Trung tâm dịch vụ */}
             <div className="relative group">
@@ -34,20 +52,33 @@ const ActionSupport = () => {
                     </svg>
                     <h6 className="text-sm">Trung tâm dịch vụ</h6>
                 </div>
-                <div className="absolute mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 translate-y-full mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-64 z-10">
                     <ul className="list-none p-2">
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Tra cứu đơn hàng</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Tra cứu bảo hành</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">In hoá đơn điển tử</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Góp ý , khiếu nại</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Dịch vụ Sửa chữa - Lắp đặt</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Dịch vụ Thu cũ - Đổi mới</span>
+                        </li>
+                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
+                            <span className="ml-1">Dịch vụ Bảo hành mở rộng</span>
                         </li>
                     </ul>
                 </div>
             </div>
+
 
             {/* Khuyến mại */}
             <div className="relative group">
@@ -57,20 +88,21 @@ const ActionSupport = () => {
                     </svg>
                     <h6 className="text-sm">Khuyến mại</h6>
                 </div>
-                <div className="absolute mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
                     <ul className="list-none p-2">
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Khuyến mại Laptop</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Khuyến mại PC</span>
                         </li>
                         <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <span className="ml-1">Chi tiết hỗ trợ 1</span>
+                            <span className="ml-1">Khuyến mại phụ kiện</span>
                         </li>
                     </ul>
                 </div>
             </div>
+
 
             {/* Tài khoản */}
             <div className="relative group">
@@ -80,26 +112,24 @@ const ActionSupport = () => {
                     </svg>
                     <h6 className="text-sm">Tài khoản</h6>
                 </div>
-                <div className="absolute mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
-                    <ul className="list-none p-2">
-                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <div>
-                                <span className="font-bold bg-red-700 text-white px-2 py-1 rounded">Tài khoản 1</span> <span className="ml-1">Chi tiết tài khoản 1</span>
-                            </div>
+                <div className="absolute right-0 mt-2 bg-white border border-gray-300 shadow-lg invisible group-hover:visible w-56 z-10">
+                    <ul className="list-none p-2 space-y-1 text-sm">
+                        <li className="cursor-pointer hover:bg-gray-100 transition flex items-center justify-center">
+                            <span className="font-bold bg-yellow-500 text-white px-2 py-1 rounded w-full text-center">Đăng Nhập</span>
                         </li>
-                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <div>
-                                <span className="font-bold bg-red-700 text-white px-2 py-1 rounded">Tài khoản 2</span> <span className="ml-1">Chi tiết tài khoản 2</span>
-                            </div>
+                        <li className="cursor-pointer hover:bg-gray-100 transition flex items-center justify-center">
+                            <span className="font-bold bg-yellow-500 text-white px-2 py-1 rounded w-full text-center">Đăng Ký</span>
                         </li>
-                        <li className="p-2 cursor-pointer border-b border-gray-300 hover:bg-gray-100 transition">
-                            <div>
-                                <span className="font-bold bg-red-700 text-white px-2 py-1 rounded">Tài khoản 3</span> <span className="ml-1">Chi tiết tài khoản 3</span>
-                            </div>
+                        <li className="cursor-pointer hover:bg-gray-100 transition flex items-center justify-center">
+                            <span className="font-bold bg-red-700 text-white px-2 py-1 rounded w-full text-center">Đăng nhập bằng Google</span>
+                        </li>
+                        <li className=" cursor-pointer hover:bg-gray-100 transition flex items-center justify-center">
+                            <span className="font-bold bg-blue-600 text-white px-2 py-1 rounded w-full text-center">Đăng nhập bằng FaceBook</span>
                         </li>
                     </ul>
                 </div>
             </div>
+
         </div>
     );
 };

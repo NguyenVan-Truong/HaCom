@@ -18,7 +18,7 @@ const ActionOnline = () => {
     ];
 
     return (
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 mt-2">
             {['Mua Hàng Online', 'Miền Bắc', 'Miền Trung', 'Miền Nam'].map((text, index) => (
                 <div
                     key={index}
