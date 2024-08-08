@@ -1,80 +1,26 @@
 import React, { useEffect, useState, useRef } from 'react';
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import '../css/ActionMain.css';
 const ActionMain = () => {
     const images = [
         { src: "../images/sanpham1.jpg", alt: "sanpham1" },
         { src: "../images/sanpham2.jpg", alt: "sanpham2" },
         { src: "../images/sanpham3.jpg", alt: "sanpham3" },
         { src: "../images/sanpham4.jpg", alt: "sanpham4" },
-        { src: "../images/sanpham5.jpg", alt: "sanpham5" },
+        // { src: "../images/sanpham5.jpg", alt: "sanpham5" },
         { src: "../images/sanpham7.jpg", alt: "sanpham7" },
         { src: "../images/sanpham8.jpg", alt: "sanpham8" },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [startX, setStartX] = useState<number | null>(null);
-    const [scrollLeft, setScrollLeft] = useState(0);
-    const sliderRef = useRef<HTMLDivElement | null>(null);
-
-    const handlePrevClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
-    const handleNextClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
+    const sliderRef = useRef<Slider | null>(null);
 
     const handleImageClick = (index: number) => {
         setCurrentIndex(index);
-    };
-
-    const handleMouseDown = (e: React.MouseEvent) => {
         if (sliderRef.current) {
-            setStartX(e.clientX);
-            setScrollLeft(sliderRef.current.scrollLeft);
-            sliderRef.current.style.cursor = 'grabbing';
-            sliderRef.current.style.transition = 'none'; // Disable transition for smooth drag
-        }
-    };
-
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (startX !== null && sliderRef.current) {
-            const x = e.clientX;
-            const walk = (x - startX) * 2; // Adjust scroll speed here
-            sliderRef.current.scrollLeft = scrollLeft - walk;
-        }
-    };
-
-    const handleMouseUp = () => {
-        if (sliderRef.current) {
-            sliderRef.current.style.cursor = 'grab';
-            sliderRef.current.style.transition = 'scroll 0.3s ease'; // Re-enable transition
-            setStartX(null);
-        }
-    };
-
-    const handleTouchStart = (e: React.TouchEvent) => {
-        if (sliderRef.current) {
-            setStartX(e.touches[0].clientX);
-            setScrollLeft(sliderRef.current.scrollLeft);
-            sliderRef.current.style.cursor = 'grabbing';
-            sliderRef.current.style.transition = 'none'; // Disable transition for smooth drag
-        }
-    };
-
-    const handleTouchMove = (e: React.TouchEvent) => {
-        if (startX !== null && sliderRef.current) {
-            const x = e.touches[0].clientX;
-            const walk = (x - startX) * 2; // Adjust scroll speed here
-            sliderRef.current.scrollLeft = scrollLeft - walk;
-        }
-    };
-
-    const handleTouchEnd = () => {
-        if (sliderRef.current) {
-            sliderRef.current.style.cursor = 'grab';
-            sliderRef.current.style.transition = 'scroll 0.3s ease'; // Re-enable transition
-            setStartX(null);
+            sliderRef.current.slickGoTo(index); // Chuyển đến slide tương ứng
         }
     };
 
@@ -86,44 +32,29 @@ const ActionMain = () => {
         return () => clearInterval(interval); // Xoá bộ đếm thời gian khi component bị hủy
     }, [images.length]);
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
+
     return (
         <>
-            <div className="relative">
-                <img src={images[currentIndex].src} alt={images[currentIndex].alt} width="550" height="500" className="block pt-10" />
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-9 h-9 absolute top-1/2 left-0 transform -translate-y-1/2 cursor-pointer"
-                    onClick={handlePrevClick}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-9 h-9 absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer"
-                    onClick={handleNextClick}
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
+            <div className="relative w-[550px] pt-5">
+                <Slider {...settings} ref={sliderRef}>
+                    {images.map((image, index) => (
+                        <div key={index}>
+                            <img src={image.src} alt={image.alt} className="block w-full h-auto" />
+                        </div>
+                    ))}
+                </Slider>
                 <img src="../images/asus.jpg" alt="" width="150" className="absolute top-0 right-0 z-10" />
             </div>
-            <div
-                ref={sliderRef}
-                className="relative w-[550px] overflow-x-auto cursor-grab"
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
-            >
+            <div className="relative w-[550px] overflow-x-auto cursor-grab">
                 <div className="flex whitespace-nowrap">
                     {images.map((image, index) => (
                         <div key={index} className="flex-shrink-0 w-[115px] mx-[12.5px]">
