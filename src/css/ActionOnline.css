@@ -1,0 +1,15 @@
+/* Thêm vào ActionMain.css hoặc trực tiếp vào class */
+.slider-container {
+  position: relative; /* Đảm bảo rằng slider có vị trí tương đối */
+}
+
+.slider-image {
+  z-index: 1; /* Đặt lớp thấp hơn */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2; /* Đặt lớp cao hơn */
+}
