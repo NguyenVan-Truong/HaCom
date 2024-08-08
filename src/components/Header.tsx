@@ -31,12 +31,37 @@ const Header = () => {
             {/* Header2    */}
 
             <div className="flex flex-wrap justify-center items-center space-x-4">
-                <button className='flex items-center space-x-1 border border-gray-300 p-1 font-bold'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                    </svg>
-                    <h6>Danh Mục</h6>
-                </button>
+
+                <div className="relative inline-block">
+                    <button className='flex items-center space-x-1 border border-gray-300 p-2 font-bold'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <h6>Danh Mục</h6>
+                    </button>
+                    <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 transform scale-95 transition-all duration-200 ease-in-out group-hover:opacity-100 group-hover:scale-100">
+                        <ul>
+                            <li className="p-2 hover:bg-gray-200 relative group">
+                                Option 1
+                                <div className="absolute left-full top-0 mt-0 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 transform scale-95 transition-all duration-200 ease-in-out group-hover:opacity-100 group-hover:scale-100">
+                                    <ul>
+                                        <li className="p-2 hover:bg-gray-200">Sub Option 1</li>
+                                        <li className="p-2 hover:bg-gray-200">Sub Option 2</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li className="p-2 hover:bg-gray-200">Option 2</li>
+                            <li className="p-2 hover:bg-gray-200">Option 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
                 <img src="../images/logo.png" alt="" width={110} height={110} />
                 <form className="flex items-center border border-red-500 rounded-3xl overflow-hidden">
                     <input
