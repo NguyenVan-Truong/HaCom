@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ActionMain from '../Action/ActionMain';
-import ActionButtonView from '../Action/ActionButtonView';
 import ToggleButtons from '../Action/ActionButtonView';
 
 const Main = () => {
@@ -15,7 +14,7 @@ const Main = () => {
     };
     return (
         <>
-            <div className='flex flex-col items-center w-full max-w-full'>
+            <div className='flex flex-col items-center w-full max-w-full '>
                 {/* Tiêu Đề */}
                 <div className='flex justify-center items-center mt-10'>
                     <div className='border-b-2 border-gray-200 pb-2 mx-8 w-[1250px] text-left'>
@@ -25,47 +24,24 @@ const Main = () => {
                     </div>
                 </div>
                 {/* Thông Tin */}
-                <div className="flex justify-center  pb-2 mx-8 w-[1250px] text-left">
-                    <div className="relative flex-shrink-0 ">
-                        {/* <div className="relative " >
-                            <img src="../images/sanpham1.jpg" alt="" width="550" height="500" className="block" />
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-9 h-9 absolute top-1/2 left-0 transform -translate-y-1/2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-9 h-9 absolute top-1/2 right-0 transform -translate-y-1/2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>
-                            <img src="../images/asus.jpg" alt="" width="150" height="150" className="absolute top-0 right-0 z-10" />
-                        </div> */}
+                <div className=" flex justify-center   pb-2 mx-8 w-[1250px] text-left ">
+                    <div className="flex-1 relative space-x-6 flex-shrink-0 ">
                         <ActionMain />
-                        {/* <div className="flex gap-[25px] mt-4">
-                            <img src="../images/sanpham1.jpg" alt="sanpham1" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham2.jpg" alt="sanpham2" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham3.jpg" alt="sanpham3" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham4.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham5.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham7.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham8.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                            <img src="../images/sanpham5.jpg" alt="sanpham4" className="w-32 h-24 border-2 border-gray-300 rounded-xl shadow-2xl transition-colors duration-300 hover:border-black hover:shadow-none" />
-                        </div> */}
-                        <div className='flex justify-center items-center  mt-5'>
+                        <div className='flex justify-center items-center mt-5'>
                             <div className="w-32 flex flex-col items-center">
                                 <img src="../images/sanpham5.jpg" alt="Hình ảnh chụp sản phẩm" width={50} height={50} className="border-2 border-gray-400 p-1 rounded-lg" />
                                 <span className='text-center'>Hình ảnh chụp sản phẩm</span>
                             </div>
                             <div className='w-32 flex flex-col items-center' >
-
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-12 , border-2 border-red-400 p-1 rounded-lg bg-red-600 text-white">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
                                 </svg>
-
-
                                 <span className='text-center'>Thông số <br /> kỹ thuật</span>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex-grow ml-4 p-5">
+                    <div className="flex-grow ml-4 p-5 w-[350px] h-[830px] overflow-auto ">
                         <div>
                             <div className=' flex space-x-4'>
                                 <span>Mã SP : <b className='text-blue-600'>LTAU857</b> </span> <div> | </div>
@@ -115,14 +91,6 @@ const Main = () => {
                                 <li className="custom-list-item mb-2">
                                     Màn hình: 15.6-inch FHD (1920 x 1080) 16:9, 144Hz, Value IPS-level, 250nits, 45% NTSC, 62.5% sRGB, Anti-glare display, Adaptive-sync
                                 </li>
-                                {/* <button className='flex items-center space-x-2 bg-custom-gray px-4 py-2 rounded-md'>
-                                    <span className='flex-grow text-center'>Xem đầy đủ</span>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                        </svg>
-                                    </div>
-                                </button> */}
                                 <ToggleButtons />
                             </ul>
                             <div className='border-2 border-dotted border-gray-400 p-4 rounded-lg mt-3'>
@@ -225,15 +193,11 @@ const Main = () => {
                                             <span>Cam kết giá tốt nhất thị trường, liên hệ 19001903 hoặc đến tận nơi để có giá tốt nhất!</span>
                                         </div>
                                     </div>
-
-
                                 </div>
-
                             </div>
                             <div className="mt-2 flex items-center space-x-3 ">
                                 <span >Số lượng:</span>
                                 <div className=' rounded-sm border-2 border-gray-200'>
-
                                     <button
                                         onClick={handleDecrease}
                                         className="px-4 py-2 bg-gray-200 text-gray-700 border border-gray-400 rounded-sm focus:outline-none"
@@ -292,8 +256,6 @@ const Main = () => {
                         </h6>
                     </div>
                 </div>
-
-
             </div>
 
         </>
