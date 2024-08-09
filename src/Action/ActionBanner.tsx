@@ -22,7 +22,7 @@ const ActionBanner: React.FC = () => {
                     <img src="../images/sanpham1.jpg" alt="" className='ml-80' />
                     <div className='ml-32'>
                         <h2 className='mt-2 text-xl'><b>Thiết kế sang trọng, sắc sảo</b></h2>
-                        <p className='mt-2 pb-2 mx-8 w-[1250px] text-left'>
+                        <p className='mt-2 pb-2 mx-8 w-[1200px] text-left'>
                             <b>Asus TUF Gaming A15 FA506NF</b>mang phong cách đậm chất gaming nổi bật với màu sắc Đen than chì đẹp mắt. Hoàn thiện với kim loại
                             được đánh bóng với các nét đường nét dạng sợi tương phản trên khung máy được cắt gọn gàng. Mặt đáy của máy được thiết kế dạng tổ
                             ong giúp tối ưu cho hệ thống làm mát. Một đồng minh đáng tin cậy cho dù bạn ở bất cứ đâu với tính di động của chiếc laptop Asus TUF

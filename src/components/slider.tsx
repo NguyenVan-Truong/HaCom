@@ -1,7 +1,7 @@
 
 import ActionSlider from '../Action/ActionSlider'
 
-const slider = () => {
+const Slider = () => {
     return (
         <>
             {/* <div className="flex overflow-x-auto p-4 space-x-4 justify-center items-center">
@@ -234,4 +234,4 @@ const slider = () => {
     )
 }
 
-export default slider
+export default Slider

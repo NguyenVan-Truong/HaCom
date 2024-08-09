@@ -15,7 +15,7 @@ const Main = () => {
     };
     return (
         <>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center w-full max-w-full'>
                 {/* Tiêu Đề */}
                 <div className='flex justify-center items-center mt-10'>
                     <div className='border-b-2 border-gray-200 pb-2 mx-8 w-[1250px] text-left'>

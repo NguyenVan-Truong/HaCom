@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../css/ActionMain.css';
+import { Image } from 'antd';
 const ActionMain = () => {
     const images = [
         { src: "../images/sanpham1.jpg", alt: "sanpham1" },
@@ -48,7 +49,7 @@ const ActionMain = () => {
                 <Slider {...settings} ref={sliderRef}>
                     {images.map((image, index) => (
                         <div key={index}>
-                            <img src={image.src} alt={image.alt} className="block w-full h-auto" />
+                            <Image src={image.src} alt={image.alt} className="block w-full h-auto" />
                         </div>
                     ))}
                 </Slider>

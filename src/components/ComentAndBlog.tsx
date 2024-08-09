@@ -3,8 +3,8 @@ import React from 'react'
 const ComentAndBlog = () => {
     return (
         <>
-            <div className='flex justify-between  p-4'>
-                <div className='text-left ml-44 '>
+            <div className='flex justify-center space-x-10 w-full max-w-full  p-4'>
+                <div className='text-left ml-28 '>
                     <h2 className=' font-medium mb-3 border-b-2 border-b-gray-200' >Khách hàng chấm điểm, đánh giá, nhận xét</h2>
                     <div className=' flex space-x-3'>
                         <div className='flex flex-col items-center'>
@@ -30,7 +30,7 @@ const ComentAndBlog = () => {
                             </div>
                         </div>
 
-                        <div className='flex justify-center items-center'>
+                        <div className='flex mr-3 items-center'>
                             <div className='border-2 rounded-lg hover:border-red-600 border-red-600 px-4 py-2 text-center text-sm'>
                                 Tất cả
                             </div>
@@ -193,27 +193,27 @@ const ComentAndBlog = () => {
                     </div>
 
                 </div>
-                <div className=' ml-24'>
+                <div className=' ml-24 w-[450px] '>
                     <h2 className='font-medium mb-3 border-b-2 w-[450px] text-left border-b-gray-200'>Tin tức mới nhất</h2>
                     <div className='border-b-2  w-[450px] text-left border-b-gray-200'>
                         <img src="../images/blog1.jpg" alt="" width={450} height={150} />
-                        <h1 className='font-medium mt-2'>CHUONG TRÌNH KHUYẾN MẠIBUILD PC TẶNG NGAY TIỀN MẶT</h1>
-                        <p className='mb-5 pb-2 w-[500px] text-left'>Từ nay cho đến khi có thông báo mới</p>
+                        <h1 className='font-medium mt-2 w-[450px] ' >CHUONG TRÌNH KHUYẾN MẠIBUILD PC TẶNG NGAY TIỀN MẶT</h1>
+                        <p className='mb-5 pb-2 w-[450px]  text-left'>Từ nay cho đến khi có thông báo mới</p>
                     </div>
                     <div className='border-b-2 mb-3 mt-3 w-[450px] text-left border-b-gray-200'>
                         <img src="../images/blog2.jpg" alt="" width={450} height={150} />
                         <h1 className='font-medium mt-2'>CHUONG TRÌNH KHUYẾN MẠIBUILD PC TẶNG NGAY TIỀN MẶT</h1>
-                        <p className='mb-5 pb-2 w-[500px] text-left'>Màn hình ViewSonic VA3209U-2K là lựa chọn hoàn hảo cho những ai đang tìm kiếm một màn hình lớn, sắc nét và đa năng cho cả nhu cầu công việc và giải trí </p>
+                        <p className='mb-5 pb-2 w-[450px]  text-left'>Màn hình ViewSonic VA3209U-2K là lựa chọn hoàn hảo cho những ai đang tìm kiếm một màn hình lớn, sắc nét và đa năng cho cả nhu cầu công việc và giải trí </p>
                     </div>
                     <div className='border-b-2  mb-3 w-[450px] text-left border-b-gray-200'>
                         <img src="../images/blog3.jpg" alt="" width={450} height={150} />
                         <h1 className='font-medium mt-2'>CHUONG TRÌNH KHUYẾN MẠIBUILD PC TẶNG NGAY TIỀN MẶT</h1>
-                        <p className='mb-5 pb-2 w-[500px] text-left'>Màn hình ViewSonic VX2528 là một lựa chọn tuyệt vời cho những người đam mê công nghệ và game thủ chuyên nghiệp. Sản phẩm là một trong những lựa chọn màn gaming p/p trong khoảng 3 triệu đồng.</p>
+                        <p className='mb-5 pb-2 w-[450px]  text-left'>Màn hình ViewSonic VX2528 là một lựa chọn tuyệt vời cho những người đam mê công nghệ và game thủ chuyên nghiệp. Sản phẩm là một trong những lựa chọn màn gaming p/p trong khoảng 3 triệu đồng.</p>
                     </div>
                     <div className='border-b-2 mb-3 border-b-gray-200'>
                         <img src="../images/blog4.jpg" alt="" width={450} height={150} />
                         <h1 className='font-medium mt-2'>CHUONG TRÌNH KHUYẾN MẠIBUILD PC TẶNG NGAY TIỀN MẶT</h1>
-                        <p className='mb-5 pb-2 w-[500px] text-left'>Danh sách màn hình chính hãng giá rẻ dưới 2 triệu đồng tại HACOM sẽ giúp cho anh em tối ưu thời gian tìm hiểu về tính năng và giá thành.</p>
+                        <p className='mb-5 pb-2 w-[450px]  text-left'>Danh sách màn hình chính hãng giá rẻ dưới 2 triệu đồng tại HACOM sẽ giúp cho anh em tối ưu thời gian tìm hiểu về tính năng và giá thành.</p>
                     </div>
                 </div>
             </div>

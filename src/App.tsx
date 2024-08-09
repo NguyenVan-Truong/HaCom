@@ -10,14 +10,14 @@ import ComentAndBlog from './components/ComentAndBlog';
 const App: React.FC = () => {
   return (
     <>
-      {/* <div className="container mx-auto w-full max-w-full"> */}
-      <Header />
-      <Nav />
-      <Main />
-      <Banner />
-      <ComentAndBlog />
-      <Slider />
-      {/* </div> */}
+      <div className="container mx-auto w-full max-w-full px-4 ">
+        <Header />
+        <Nav />
+        <Main />
+        <Banner />
+        <ComentAndBlog />
+        <Slider />
+      </div>
     </>
   );
 }
