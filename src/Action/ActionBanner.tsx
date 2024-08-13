@@ -7,20 +7,22 @@ const ActionBanner: React.FC = () => {
         <>
             {!isExpanded ? (
                 <>
-                    <img src="../images/sanpham6.jpg" alt="" className='ml-44' />
-                    <div className='flex items-center justify-center'>
-                        <button
-                            className="px-6 py-2 bg-gray-200 hover:bg-gradient-to-r hover:from-blue-700 hover:to-red-600 hover:text-white rounded-3xl text-gray-700 border border-gray-400 focus:outline-none"
-                            onClick={() => setIsExpanded(true)}
-                        >
-                            Xem Thêm
-                        </button>
+                    <div className='justify-center'>
+                        <img src="../images/sanpham6.jpg" alt="" className='' />
+                        <div className='flex items-center justify-center'>
+                            <button
+                                className="px-6 py-2 bg-gray-200 hover:bg-gradient-to-r hover:from-blue-700 hover:to-red-600 hover:text-white rounded-3xl text-gray-700 border border-gray-400 focus:outline-none"
+                                onClick={() => setIsExpanded(true)}
+                            >
+                                Xem Thêm
+                            </button>
+                        </div>
                     </div>
                 </>
             ) : (
                 <>
                     <img src="../images/sanpham1.jpg" alt="" className='ml-80' />
-                    <div className='ml-32'>
+                    <div className=''>
                         <h2 className='mt-2 text-xl'><b>Thiết kế sang trọng, sắc sảo</b></h2>
                         <p className='mt-2 pb-2 mx-8 w-[1200px] text-left'>
                             <b>Asus TUF Gaming A15 FA506NF</b>mang phong cách đậm chất gaming nổi bật với màu sắc Đen than chì đẹp mắt. Hoàn thiện với kim loại
@@ -32,7 +34,7 @@ const ActionBanner: React.FC = () => {
                             .
                         </p>
                     </div>
-                    <img src="../images/sanpham5.jpg" alt="" className='ml-72' />
+                    <img src="../images/sanpham5.jpg" alt="" className='ml-24' />
                     <div className='flex items-center justify-center'>
                         <button
                             className="px-6 py-2 bg-gray-200 hover:bg-gradient-to-r hover:from-blue-700 hover:to-red-600 hover:text-white rounded-3xl text-gray-700 border border-gray-400 focus:outline-none"

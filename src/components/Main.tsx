@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ActionMain from '../Action/ActionMain';
 import ToggleButtons from '../Action/ActionButtonView';
-
+import "../css/ActionMain.css";
 const Main = () => {
     const [quantity, setQuantity] = useState<number>(1);
 
@@ -14,7 +14,7 @@ const Main = () => {
     };
     return (
         <>
-            <div className='flex flex-col items-center w-full max-w-full '>
+            <div className='flex flex-col items-center '>
                 {/* Tiêu Đề */}
                 <div className='flex justify-center items-center mt-10'>
                     <div className='border-b-2 border-gray-200 pb-2 mx-8 w-[1250px] text-left'>
@@ -24,8 +24,9 @@ const Main = () => {
                     </div>
                 </div>
                 {/* Thông Tin */}
-                <div className=" flex justify-center   pb-2 mx-8 w-[1250px] text-left ">
-                    <div className="flex-1 relative space-x-6 flex-shrink-0 ">
+                <div className=" flex justify-center pb-2 mx-8 w-[1250px] text-left ">
+                    {/* bên trái */}
+                    <div className="sticky-left flex-1 space-x-6 flex-shrink-0">
                         <ActionMain />
                         <div className='flex justify-center items-center mt-5'>
                             <div className="w-32 flex flex-col items-center">
@@ -41,7 +42,8 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className="flex-grow ml-4 p-5 w-[350px] h-[830px] overflow-auto ">
+                    {/* bên phải */}
+                    <div className="content flex-grow ml-4 p-5 w-[150px] ">
                         <div>
                             <div className=' flex space-x-4'>
                                 <span>Mã SP : <b className='text-blue-600'>LTAU857</b> </span> <div> | </div>

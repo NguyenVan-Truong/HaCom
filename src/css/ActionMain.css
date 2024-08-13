@@ -18,3 +18,9 @@
 .slick-dots {
   display: none;
 }
+.sticky-left {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
