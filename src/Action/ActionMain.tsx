@@ -4,13 +4,38 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../css/ActionMain.css';
 import { Image } from 'antd';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+const CustomPrevArrow = (props: any) => {
+    const { onClick } = props;
+    return (
+        <div
+            className="absolute left-6 top-1/2 text-4xl transform -translate-y-1/2 text-black  p-2 z-10"
+            onClick={onClick}
+        >
+            <LeftOutlined />
+
+        </div>
+    );
+};
+
+const CustomNextArrow = (props: any) => {
+    const { onClick } = props;
+    return (
+        <div
+            className="absolute right-0 top-1/2 text-4xl transform -translate-y-1/2 text-black  p-2 z-10"
+            onClick={onClick}
+        >
+            <RightOutlined />
+        </div>
+    );
+};
+
 const ActionMain = () => {
     const images = [
         { src: "../images/sanpham1.jpg", alt: "sanpham1" },
         { src: "../images/sanpham2.jpg", alt: "sanpham2" },
         { src: "../images/sanpham3.jpg", alt: "sanpham3" },
         { src: "../images/sanpham4.jpg", alt: "sanpham4" },
-        // { src: "../images/sanpham5.jpg", alt: "sanpham5" },
         { src: "../images/sanpham7.jpg", alt: "sanpham7" },
         { src: "../images/sanpham8.jpg", alt: "sanpham8" },
     ];
@@ -21,16 +46,16 @@ const ActionMain = () => {
     const handleImageClick = (index: number) => {
         setCurrentIndex(index);
         if (sliderRef.current) {
-            sliderRef.current.slickGoTo(index); // Chuyển đến slide tương ứng
+            sliderRef.current.slickGoTo(index);
         }
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000); // Chuyển ảnh sau mỗi 3 giây
+        }, 3000);
 
-        return () => clearInterval(interval); // Xoá bộ đếm thời gian khi component bị hủy
+        return () => clearInterval(interval);
     }, [images.length]);
 
     const settings = {
@@ -41,6 +66,8 @@ const ActionMain = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        prevArrow: <CustomPrevArrow />,
+        nextArrow: <CustomNextArrow />,
     };
 
     return (

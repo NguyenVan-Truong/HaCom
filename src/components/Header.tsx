@@ -9,6 +9,7 @@ import ComentAndBlog from './ComentAndBlog';
 import Banner from './Banner';
 import Main from './Main';
 import '../css/ActionHeader2.css'
+import Footer from './Footer';
 const Header = () => {
     return (
         <>
@@ -93,7 +94,7 @@ const Header = () => {
             <Banner />
             <ComentAndBlog />
             <Slider />
-
+            <Footer />
 
         </>
     );

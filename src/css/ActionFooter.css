@@ -1,0 +1,41 @@
+.rotate-image {
+  transform: rotate(35deg);
+}
+.rotate-block {
+  transform: rotate(-55deg);
+}
+.arrow-prev {
+  background: white; /* Thay đổi màu nền nếu cần */
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+}
+.arrow-next {
+  background: white; /* Thay đổi màu nền nếu cần */
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+}
+
+.arrow-prev {
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-next {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.border-b-dashed-custom {
+  border-bottom-style: dashed;
+}

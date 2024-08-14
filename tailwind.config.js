@@ -11,7 +11,8 @@ module.exports = {
       },
       boxShadow: {
         'custom-gray': '0 5px 10px 2px rgba(255, 10, 50, 30.3)', 
-      }
+      },
+      
     },
   },
   plugins: [],
