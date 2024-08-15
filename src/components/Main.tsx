@@ -28,7 +28,7 @@ const Main = () => {
                     {/* bên trái */}
                     <div className="sticky-left flex-1 space-x-6 flex-shrink-0">
                         <ActionMain />
-                        <div className='flex justify-center items-center mt-5'>
+                        <div className='relative flex justify-center items-center mt-5'>
                             <div className="w-32 flex flex-col items-center">
                                 <img src="../images/sanpham5.jpg" alt="Hình ảnh chụp sản phẩm" width={50} height={50} className="border-2 border-gray-400 p-1 rounded-lg" />
                                 <span className='text-center'>Hình ảnh chụp sản phẩm</span>

@@ -72,7 +72,7 @@ const ActionMain = () => {
 
     return (
         <>
-            <div className="relative w-[550px] pt-5">
+            <div className="relative w-[550px] h-[auto] pt-5">
                 <Slider {...settings} ref={sliderRef}>
                     {images.map((image, index) => (
                         <div key={index}>
@@ -80,9 +80,9 @@ const ActionMain = () => {
                         </div>
                     ))}
                 </Slider>
-                <img src="../images/asus.jpg" alt="" width="150" className="absolute top-0 right-0 z-10" />
+                <img src="../images/asus.jpg" alt="" width="130" className="absolute top-5 right-0 z-10" />
             </div>
-            <div className="relative w-[550px] overflow-x-auto cursor-grab">
+            <div className="relative w-[550px]  overflow-x-auto cursor-grab">
                 <div className="flex whitespace-nowrap">
                     {images.map((image, index) => (
                         <div key={index} className="flex-shrink-0 w-[115px] mx-[12.5px]">

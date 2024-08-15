@@ -21,6 +21,5 @@
 .sticky-left {
   position: sticky;
   top: 0;
-  height: 100vh;
-  overflow: hidden;
+  height: 125vh; /* Đảm bảo chiều cao của sticky phần tử đủ lớn */
 }
