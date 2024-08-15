@@ -3,8 +3,8 @@ import React from 'react'
 const ComentAndBlog = () => {
     return (
         <>
-            <div className='flex justify-center space-x-10 w-full max-w-full  p-4'>
-                <div className='text-left ml-28 '>
+            <div className='flex justify-center space-x-28 w-full max-w-full  p-4'>
+                <div className='text-left '>
                     <h2 className=' font-medium mb-3 border-b-2 border-b-gray-200' >Khách hàng chấm điểm, đánh giá, nhận xét</h2>
                     <div className=' flex space-x-3'>
                         <div className='flex flex-col items-center'>

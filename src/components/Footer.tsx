@@ -40,7 +40,7 @@ const Footer = () => {
     return (
         <>
             <div className='flex justify-center mt-10 space-x-5'>
-                <div className='border bg-repeating-gradient border-red-600 w-[350px] rounded-xl flex flex-col items-center'>
+                <div className='border bg-repeating-gradient border-red-600 w-[300px] rounded-xl flex flex-col items-center'>
                     <div className='flex justify-center mt-20 mb-20 items-center'>
                         <div className='rounded-lg'>
                             <img className="rotate-image rounded-lg mb-4 ml-8" src="../images/sanpham1.jpg" alt="" width={50} />
@@ -88,10 +88,10 @@ const Footer = () => {
             </div>
             <div className="flex justify-center mb-4">
                 <div className="flex space-x-10 mt-5">
-                    <div className="flex-1 w-3xl">
+                    <div className="flex-1 w-xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">1</span>
-                            <span className="bg-blue-950 text-white px-5 w-[400px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white px-5 w-[350px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -106,7 +106,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">2</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -121,7 +121,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">3</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -139,7 +139,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">1</span>
-                            <span className="bg-blue-950 text-white px-5 w-[400px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white px-5 w-[350px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -154,7 +154,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">2</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -169,7 +169,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">3</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -187,7 +187,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">1</span>
-                            <span className="bg-blue-950 text-white px-5 w-[400px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white px-5 w-[350px] font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -202,7 +202,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">2</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -217,7 +217,7 @@ const Footer = () => {
                     <div className="flex-1 w-3xl">
                         <div className="flex items-center">
                             <span className="bg-red-500 text-white w-8 h-8 flex items-center justify-center">3</span>
-                            <span className="bg-blue-950 text-white w-[400px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
+                            <span className="bg-blue-950 text-white w-[350px] px-5 font-bold text-base py-1">HACOM-HAI BÀ TRƯNG</span>
                         </div>
                         <div>
                             <p className="font-medium">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</p>
@@ -230,37 +230,37 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row space-x-24 p-7 bg-slate-200 justify-center border-t border-t-gray-600 border-b border-b-gray-600 border-b-dashed-custom'>
-                <div className='flex space-x-3'>
-                    <i className="text-6xl text-red-600 bi bi-truck"></i>
+            <div className='flex flex-row space-x-14 p-5 bg-slate-200 justify-center border-t border-t-gray-600 border-b border-b-gray-600 border-b-dashed-custom'>
+                <div className='flex space-x-2'>
+                    <i className="text-4xl text-red-600 bi bi-truck"></i>
                     <div className='text-black text-xl'>
                         <h1 className='font-bold'>CHÍNH SÁCH GIAO HÀNG</h1>
                         <p className='text-sm'>Nhận hàng với thanh toán tại nhà</p>
                     </div>
                 </div>
                 <div className='flex space-x-3'>
-                    <i className="text-6xl text-red-600 bi bi-arrow-repeat"></i>
+                    <i className="text-4xl text-red-600 bi bi-arrow-repeat"></i>
                     <div className='text-black text-xl'>
                         <h1 className='font-bold'>ĐỔI TRẢ DỄ DÀNG</h1>
                         <p className='text-sm'>1 đổi 1 trong 15 ngày</p>
                     </div>
                 </div>
                 <div className='flex space-x-3'>
-                    <i className="text-6xl text-red-600 bi bi-credit-card"></i>
+                    <i className="text-4xl text-red-600 bi bi-credit-card"></i>
                     <div className='text-black text-xl'>
                         <h1 className='font-bold'>THANH TOÁN TIỆN LỢI</h1>
                         <p className='text-sm'>Trả tiền mặt, CK, trả góp 0%</p>
                     </div>
                 </div>
                 <div className='flex space-x-3'>
-                    <i className="text-6xl text-red-600 bi bi-chat-dots"></i>
+                    <i className="text-4xl text-red-600 bi bi-chat-dots"></i>
                     <div className='text-black text-xl'>
                         <h1 className='font-bold'>HỖ TRỢ NHIỆT TÌNH</h1>
                         <p className='text-sm'>Tư vấn, giải đáp mọi thắc mắc</p>
                     </div>
                 </div>
             </div>
-            <div className='mt-5 flex flex-row justify-center space-x-44'>
+            <div className='mt-5 flex flex-row justify-center space-x-28'>
                 <div>
                     <h1 className='text-xl font-semibold '>GIỚI THIỆU HACOM</h1>
                     <div className='border m-1 border-red-500 w-[100px]'></div>
@@ -301,13 +301,15 @@ const Footer = () => {
                     <p className="mb-1">Tin tức</p>
                 </div>
             </div>
-            <div className='bg-black mt-5 items-center'>
-                <div className='indent-32 pt-8 pb-12  text-white'>
-                    <p className='pb-2'>© 2024 Công ty Cổ phần đầu tư công nghệ HACOM</p>
-                    <p className='pb-2'>Trụ sở chính: Số 129+131 Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Thành phố Hà Nội</p>
-                    <p className='pb-2'>VPGD: Tầng 3 Tòa nhà LILAMA, số 124 Minh Khai, Phường Minh Khai, Quận Hai Bà Trưng, Thành phố Hà Nội</p>
-                    <p className='pb-2'>GPĐKKD số 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 31/8/2001</p>
-                    <p className='pb-2'></p>
+            <div className='bg-black mt-5 items-center '>
+                <div className='flex flex-wrap justify-center'>
+                    <div className=' pt-8  pb-12 w-full max-w-[1200px]  text-white'>
+                        <p className='pb-2'>© 2024 Công ty Cổ phần đầu tư công nghệ HACOM</p>
+                        <p className='pb-2'>Trụ sở chính: Số 129+131 Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Thành phố Hà Nội</p>
+                        <p className='pb-2'>VPGD: Tầng 3 Tòa nhà LILAMA, số 124 Minh Khai, Phường Minh Khai, Quận Hai Bà Trưng, Thành phố Hà Nội</p>
+                        <p className='pb-2'>GPĐKKD số 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 31/8/2001</p>
+                        <p className='pb-2'></p>
+                    </div>
                 </div>
             </div>
         </>
