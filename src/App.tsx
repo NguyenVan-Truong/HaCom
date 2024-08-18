@@ -1,16 +1,16 @@
 // src/App.tsx
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Nav from './components/Nav';
-import Slider from './components/slider';
-import Banner from './components/Banner';
-import ComentAndBlog from './components/ComentAndBlog';
+import Detail from './pages/Detail';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
     <>
-      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/detail' element={<Detail />} />
+      </Routes>
     </>
   );
 }

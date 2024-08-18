@@ -1,19 +1,12 @@
-import React from 'react';
-import ActionHotline from '../Action/ActionHotline';
-import ActionSupport from '../Action/ActionSupport';
-import ActionOnline from '../Action/ActionOnline';
-import ActionHeader from '../Action/ActionHeader';
-import Nav from './Nav';
-import Slider from './slider';
-import ComentAndBlog from './ComentAndBlog';
-import Banner from './Banner';
-import Main from './Main';
-import '../css/ActionHeader2.css'
-import Footer from './Footer';
-const Header = () => {
+import React from 'react'
+import ActionHotline from '../Action/ActionHotline'
+import ActionOnline from '../Action/ActionOnline'
+import ActionSupport from '../Action/ActionSupport'
+import ActionHeader from '../Action/ActionHeader'
+
+const Home = () => {
     return (
         <>
-
             <div className=" flex flex-wrap justify-center bg-gray-100 items-center space-x-4">
                 <div className=" items-center space-x-1 md:flex hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
@@ -35,12 +28,7 @@ const Header = () => {
             </div>
 
 
-
-
-            {/* Header2    */}
-
             <div className="header2-sticky flex flex-wrap justify-center items-center space-x-4">
-                <ActionHeader />
 
                 {/* Các phần tử khác */}
                 <img src="../images/logo.png" alt="" width={110} height={110} />
@@ -89,16 +77,8 @@ const Header = () => {
                 </div>
 
             </div>
-
-            <Nav />
-            <Main />
-            <Banner />
-            <ComentAndBlog />
-            <Slider />
-            <Footer />
-
         </>
-    );
+    )
 }
 
-export default Header;
+export default Home

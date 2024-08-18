@@ -50,13 +50,13 @@ const ActionMain = () => {
         }
     };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [images.length]);
+    //     return () => clearInterval(interval);
+    // }, [images.length]);
 
     const settings = {
         dots: false,
